@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/idTVCenterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:drawableLeft="@drawable/ic_hospital"
+        android:drawablePadding="4dp"
+        android:padding="3dp"
+        android:text="Center Name"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/idTVCenterAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVCenterName"
+        android:layout_margin="3dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="4dp"
+        android:padding="3dp"
+        android:text="Center Address"
+        android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/idTVCenterTimings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVCenterAddress"
+        android:layout_margin="3dp"
+        android:drawableLeft="@drawable/ic_time"
+        android:drawablePadding="4dp"
+        android:padding="3dp"
+        android:text="Timings"
+        android:textColor="@color/black" />
+    <LinearLayout
+        android:id="@+id/idLL1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVCenterTimings"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <TextView
+        android:id="@+id/idTVVaccineName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:drawableLeft="@drawable/ic_vaccine"
+        android:drawablePadding="4dp"
+        android:padding="3dp"
+        android:text="Vaccine Name"
+        android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/idTVFeeType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Fee Type"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/idLL2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idLL1"
+        android:orientation="horizontal"
+        android:weightSum="2">
+    <TextView
+        android:id="@+id/idTVAgeLimit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:padding="3dp"
+        android:text="Age Limit"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+        <TextView
+            android:id="@+id/idTVAvaliablity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:text="Avaliablity"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

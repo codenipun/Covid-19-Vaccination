@@ -1,41 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity2">
+
+<!--edit text for entering the pin code-->
+<EditText
+    android:id="@+id/idEdtPinCode"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_toStartOf="@id/idBtnSearch"
+    android:layout_toLeftOf="@id/idBtnSearch"
+    android:hint="Enter PinCode"
+    android:inputType="number" />
+
+<!--button for searchng the data-->
+<Button
+    android:id="@+id/idBtnSearch"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_margin="5dp"
+    android:background="@color/purple_200"
+    android:text="Search"
+    android:textAllCaps="false" />
+
+<!--progress bar for loading indicator-->
+<ProgressBar
+    android:id="@+id/idPBLoading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:visibility="gone" />
+
+<!--recycler view for displaying results in the form of list-->
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/centersRV"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2">
-    <EditText
-        android:id="@+id/idEdtPinCode"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_toStartOf="@id/idBtnSearch"
-        android:layout_toLeftOf="@id/idBtnSearch"
-        android:hint="Enter PinCode"
-        android:inputType="number" />
-    <Button
-        android:id="@+id/idBtnSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_margin="5dp"
-        android:background="@color/purple_200"
-        android:text="Search"
-        android:textAllCaps="false" />
-    <ProgressBar
-        android:id="@+id/idPBLoading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:visibility="gone" />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/centersRV"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/idEdtPinCode"
-        tools:listitem="@layout/center_rv_item" />
+    android:layout_below="@id/idEdtPinCode"
+    tools:listitem="@layout/center_rv_item" />
 
 </RelativeLayout>

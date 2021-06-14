@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-       >
+        android:background="#E1DFF1">
 
         <!--text view for displaying center name-->
         <TextView

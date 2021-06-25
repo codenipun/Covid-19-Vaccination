@@ -4,18 +4,30 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
+    android:background="#E1DFF1"
 tools:context=".MainActivity2">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_search_24">
+    </ImageView>
 
 <!--edit text for entering the pin code-->
-<EditText
-    android:id="@+id/idEdtPinCode"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    android:layout_toStartOf="@id/idBtnSearch"
-    android:layout_toLeftOf="@id/idBtnSearch"
-    android:hint="Enter PinCode"
-    android:inputType="number" />
+    <EditText
+        android:id="@+id/idEdtPinCode"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toStartOf="@id/idBtnSearch"
+        android:layout_toLeftOf="@id/idBtnSearch"
+        android:hint="Enter PinCode"
+        android:inputType="number" />
 
 <!--button for searchng the data-->
 <Button
@@ -25,8 +37,10 @@ tools:context=".MainActivity2">
     android:layout_alignParentEnd="true"
     android:layout_alignParentRight="true"
     android:layout_margin="5dp"
-    android:background="@color/purple_200"
+    android:background="@drawable/rounded"
     android:text="Search"
+    android:gravity="center"
+    android:textSize="16dp"
     android:textAllCaps="false" />
 
 <!--progress bar for loading indicator-->
